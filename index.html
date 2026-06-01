@@ -81,12 +81,13 @@
 
     <div class="form-group row">
       <label for="title_options" class="col-1 col-form-label">Title options</label>
-      <div class="col-8">
+      <div class="col-3">
         <div>
           <fieldset>
             <div class="d-flex gap-4">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="panel_icon" id="image_icon" value="image" checked>
+                <input class="form-check-input" type="radio" name="panel_icon" id="image_icon" value="image"
+                  checked="">
                 <label class="form-check-label" for="image_icon">
                   Add image icon
                 </label>
@@ -111,6 +112,31 @@
             <input type="checkbox" id="screenshot_checkbox" name="screenshot_checkbox" value="screenshot_checkbox">
             <label for="screenshot" class="col-form-label">Prefix "Screenshot: " to the panel title</label>
           </div>
+        </div>
+      </div>
+      <label for="image_options" class="col-1 col-form-label">Image options</label>
+      <div class="col-3">
+        <div>
+          <fieldset>
+            <div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="image_options" id="image_no_border"
+                  value="no_border" checked="">
+                <label class="form-check-label" for="image_icon">
+                  No image border
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="image_options" id="image_border" value="border">
+                <label class="form-check-label" for="camera_icon">
+                  Add border to image
+                </label>
+              </div>
+
+
+            </div>
+          </fieldset>
         </div>
       </div>
     </div>

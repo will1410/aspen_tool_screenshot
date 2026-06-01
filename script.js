@@ -48,6 +48,16 @@ $(document).ready(function () {
           var panel_width = '3'
         }
 
+      /* Adds function to icons image border */
+        let imageBorder = $('input[name="image_options"]:checked').val();
+        var image_border = ''
+
+        if (imageBorder === 'border') {
+          var image_border = 'border: 2px solid black;'
+        } else if (imageBorder === '') {
+          var image_border = ''
+        }
+
       /* Sets a unique ID for the bootstrap panel based on the time when the panel was created */
         var now = new Date($.now());
         var day = ("0" + now.getDate()).slice(-2);
@@ -95,7 +105,7 @@ $(document).ready(function () {
           image_link +
           '" alt="' +
           image_alt_text +
-          '" style="display: block; margin: auto; width: 95%;">\n' +
+          '" style="display: block; margin: auto; width: 95%; ' + image_border + ' ">\n' +
           '      		 </div>\n' +
           '          </div>\n' +
           '        </div>\n' +
