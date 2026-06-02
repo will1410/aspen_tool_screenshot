@@ -100,12 +100,12 @@ $(document).ready(function () {
           id_suffix +
           '">\n' +
           '          <div class="panel-body">\n' +
-          '    		 	   <img src="' +
+          '            <img src="' +
           image_link +
           '" alt="' +
           image_alt_text +
           '" style="display: block; margin: auto; width: 95%; ' + image_border + ' ">\n' +
-          '    		   </div>\n' +
+          '          </div>\n' +
           '        </div>\n' +
           '      </div>\n' +
           '    </div>\n' +
