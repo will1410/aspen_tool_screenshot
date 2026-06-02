@@ -70,21 +70,22 @@ $(document).ready(function () {
 
       /* Builds a single bootstrap accordion panel based around the inputs you've entered and outputs the raw HTML to the output textarea */
         $("#output").val(
-          '<div class="row">\n' + 
+          '<div class="container">\n' +
           '<span style="display: none;">=== BEGIN ' +
           id_suffix +
           '===</span>\n' +
-          '  <div class="col-md-' + panel_width + '">\n' +
- 
+          '  <div class="row">\n' +
+          '    <div class="col-md-' + panel_width + '">\n' +
 
-          '    <div>\n' +
+
+          '      <div>\n' +
          
-          '      <div class="panel panel-default" style="border: none; box-shadow: none;">\n' +
-          '        <div class="panel-heading" role="tab" id="heading-' +
+          '        <div class="panel panel-default" style="border: none; box-shadow: none;">\n' +
+          '          <div class="panel-heading" role="tab" id="heading-' +
           id_suffix +
           '">\n' +
-          '          <h5 class="panel-title" style="content: \'\';">\n' +
-          '            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" href="#collapse-' +
+          '            <h5 class="panel-title" style="content: \'\';">\n' +
+          '              <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" href="#collapse-' +
           id_suffix +
           '" aria-expanded="false" aria-controls="collapse-' +
           id_suffix +
@@ -92,31 +93,30 @@ $(document).ready(function () {
           screenshot_prefix +
           panel_title +
           screenshot_icon +
-          '          </h5>\n' +
-          '        </div>\n' +
-          '        <div id="collapse-' +
+          '            </h5>\n' +
+          '          </div>\n' +
+          '          <div id="collapse-' +
           id_suffix +
           '" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-' +
           id_suffix +
           '">\n' +
-          '          <div class="panel-body">\n' +
-          '    		 	   <img src="' +
+          '            <div class="panel-body">\n' +
+          '      		 	   <img src="' +
           image_link +
           '" alt="' +
           image_alt_text +
           '" style="display: block; margin: auto; width: 95%; ' + image_border + ' ">\n' +
-          '    		 </div>\n' +
+          '      		 </div>\n' +
+          '          </div>\n' +
           '        </div>\n' +
           '      </div>\n' +
+
           '    </div>\n' +
-
-
-
           '  </div>\n' +
           '<span style="display: none;">=== END ' +
           id_suffix +
           '===</span>\n' +
-          '</div>\n'
+          '</div>'
         );
     });
 
