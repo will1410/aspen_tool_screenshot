@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  /* When the "Submit" button is clicked, all this happens */
+  /* When the "Submit" button is clicked, run this code */
     $("#accordion_generator").click(function () {
       event.preventDefault();
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
           var screenshot_icon = '\n'
         }
 
-      /* Adds function to icons radio buttons */
+      /* Adds function to image width radio buttons */
         let widthType = $('input[name="panel_width"]:checked').val();
         var panel_width = '12'
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
           var panel_width = '3'
         }
 
-      /* Adds function to icons image border */
+      /* Adds function to image border radio buttons */
         let imageBorder = $('input[name="image_options"]:checked').val();
         var image_border = ''
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
         var seconds = ("0" + now.getSeconds()).slice(-2);
         var id_suffix = year + month + day + hour + minute + seconds;
 
-      /* Builds a single bootstrap accordion panel based around the inputs you've entered and outputs the raw HTML to the output textarea */
+      /* Builds a single bootstrap collapsible panel based around the inputs you've entered and outputs the raw HTML to the output textarea */
         $("#output").val(
           '<div class="container">\n' +
           '<span style="display: none;">=== BEGIN ' +
@@ -84,8 +84,8 @@ $(document).ready(function () {
           '          <div class="panel-heading" role="tab" id="heading-' +
           id_suffix +
           '">\n' +
-          '            <h5 class="panel-title" style="content: \'\';">\n' +
-          '              <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" href="#collapse-' +
+          '          <h5 class="panel-title" style="content: \'\';">\n' +
+          '            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" href="#collapse-' +
           id_suffix +
           '" aria-expanded="false" aria-controls="collapse-' +
           id_suffix +
@@ -93,34 +93,35 @@ $(document).ready(function () {
           screenshot_prefix +
           panel_title +
           screenshot_icon +
-          '            </h5>\n' +
-          '          </div>\n' +
-          '          <div id="collapse-' +
+          '          </h5>\n' +
+          '        </div>\n' +
+          '        <div id="collapse-' +
           id_suffix +
           '" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-' +
           id_suffix +
           '">\n' +
-          '            <div class="panel-body">\n' +
-          '      		 	   <img src="' +
+          '          <div class="panel-body">\n' +
+          '    		 	   <img src="' +
           image_link +
           '" alt="' +
           image_alt_text +
           '" style="display: block; margin: auto; width: 95%; ' + image_border + ' ">\n' +
-          '      		 </div>\n' +
-          '          </div>\n' +
+          '    		 </div>\n' +
           '        </div>\n' +
           '      </div>\n' +
-
           '    </div>\n' +
+
+
+
           '  </div>\n' +
           '<span style="display: none;">=== END ' +
           id_suffix +
           '===</span>\n' +
-          '</div>'
+          '</div>\n'
         );
     });
 
-    /* Copies output to clipboard */
+    /* Adds function to the "Copy to clipboard" button */
       $("#copy_to_clipboard").click(function () {
         event.preventDefault();
         var copy_output = $("#output").val().trim();
