@@ -70,11 +70,10 @@ $(document).ready(function () {
 
       /* Builds a single bootstrap collapsible panel based around the inputs you've entered and outputs the raw HTML to the output textarea */
         $("#output").val(
-          '<div class="row">\n' + 
+          '\n\n<div class="row">\n' + 
           '<span style="display: none;">=== BEGIN ' +
           id_suffix +
           '===</span>\n' +
-          '  <div class="row">\n' +
           '    <div class="col-md-' + panel_width + '">\n' +
 
 
@@ -113,11 +112,10 @@ $(document).ready(function () {
 
 
 
-          '  </div>\n' +
           '<span style="display: none;">=== END ' +
           id_suffix +
           '===</span>\n' +
-          '</div>\n'
+          '</div>\n\n'
         );
     });
 
