@@ -60,6 +60,10 @@ footer div {
   justify-content: flex-end;
 }
 
-.main p {font-size: 1.1em}
+.main p {font-size: 1.em}
+
+.comments {font-size: 1.2em}
 
 body {background-color: #c7cdd3;}
+
+pre {border: 5px solid black; border-radius: 16px; padding: 20px}
