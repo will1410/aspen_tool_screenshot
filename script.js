@@ -1,3 +1,10 @@
+/*
+  MIT License
+  Copyright (c) 2026 George H. Williams
+  Permission is hereby granted... 
+  [See MIT License text for full details]
+*/
+
 $(document).ready(function () {
 
   /* When the "Submit" button is clicked, all this happens */
@@ -76,7 +83,7 @@ $(document).ready(function () {
           '          <div class="panel-heading" role="tab" id="heading-' +
           id_suffix +
           '">\n' +
-          '            <h5 class="panel-title" style="content: \'\';">\n' +
+          '            <p class="panel-title" style="content: \'\';">\n' +
           '              <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" href="#collapse-' +
           id_suffix +
           '" aria-expanded="false" aria-controls="collapse-' +
@@ -85,7 +92,7 @@ $(document).ready(function () {
           screenshot_prefix +
           panel_title +
           screenshot_icon +
-          '            </h5>\n' +
+          '            </p>\n' +
           '          </div>\n' +
           '          <div id="collapse-' +
           id_suffix +
