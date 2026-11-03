@@ -11,6 +11,29 @@ $(document).ready(function () {
     $("#accordion_generator").click(function () {
       event.preventDefault();
 
+      // Remove any previous error highlighting
+        $(".form-group").removeClass("has-error");
+
+        // Check required fields
+        const form = $("#screenshot_form")[0];
+
+        if (!form.checkValidity()) {
+
+          // Highlight the row containing the first invalid field
+          $(form.querySelector(":invalid"))
+            .closest(".form-group")
+            .addClass("has-error");
+
+          form.reportValidity();
+          return;
+        }
+
+      /* Checks HTML5 form validation */
+        if (!$("#screenshot_form")[0].checkValidity()) {
+          $("#screenshot_form")[0].reportValidity();
+          return;
+        }
+
       /* Gets data from the form to build the raw HTML output */
         let panel_title = $("#panel_title").val().trim();
         let image_link = $("#image_link").val().trim();

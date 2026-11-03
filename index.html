@@ -75,28 +75,43 @@
   <form id="screenshot_form">
 
     <div class="form-group row">
-      <label for="panel_title" class="col-1 col-form-label">Panel title</label>
-      <div class="col-8">
-        <input id="panel_title" name="panel_title" type="text" class="form-control">
+      <div class="col-1 offset-1 text-end">
+        <label for="panel_title" class="col-form-label">Panel title</label>
+      </div>
+      <div class="col-5">
+        <input id="panel_title" name="panel_title" type="text" class="form-control" required>
+      </div>
+      <div class="col-1">
+        <span class="required" aria-hidden="true">* Required</span>
       </div>
     </div>
 
     <div class="form-group row">
-      <label for="image_link" class="col-1 col-form-label">Image URL</label>
-      <div class="col-8">
-        <input id="image_link" name="image_link" type="text" class="form-control">
+      <div class="col-1 offset-1 text-end">
+        <label for="image_link" class="col-form-label">Image URL</label>
+      </div>
+      <div class="col-5">
+        <input id="image_link" name="image_link" type="text" class="form-control" required>
+      </div>
+      <div class="col-1">
+        <span class="required" aria-hidden="true">* Required</span>
       </div>
     </div>
 
     <div class="form-group row">
-      <label for="image_alt_text" class="col-1 col-form-label">Image alt text</label>
-      <div class="col-8">
+      <div class="col-1 offset-1 text-end">
+        <label for="image_alt_text" class="col-form-label">Image alt text</label>
+      </div>
+      <div class="col-5">
         <input id="image_alt_text" name="image_alt_text" type="text" class="form-control" required>
       </div>
+      <div class="col-1">
+        <span class="required" aria-hidden="true">* Required</span>
+      </div>
     </div>
 
     <div class="form-group row">
-      <label for="title_options" class="col-1 col-form-label">Title options</label>
+      <label for="title_options" class="col-1 col-form-label offset-1">Title options</label>
       <div class="col-3">
         <div>
           <fieldset>
@@ -158,7 +173,7 @@
     </div>
 
     <div class="form-group row">
-      <label for="width_options" class="col-1 col-form-label">Panel width</label>
+      <label for="width_options" class="col-1 col-form-label offset-1">Panel width</label>
       <div class="col-8">
       
           <fieldset>
@@ -217,7 +232,7 @@
     </div>
 
     <div class="form-group row">
-      <div class="offset-1 col-8">
+      <div class="offset-2 col-8">
         <button name="submit" type="button" class="btn btn-primary" id="accordion_generator">Submit</button>
         <button name="copy" type="button" class="btn btn-primary" id="copy_to_clipboard">Copy output to
           clipboard</button>
@@ -226,7 +241,7 @@
     </div>
 
     <div class="form-group row">
-      <label for="output" class="col-1 col-form-label">Output</label>
+      <label for="output" class="col-1 col-form-label offset-1">Output</label>
       <div class="col-8">
         <textarea id="output" name="output" cols="40" rows="8" class="form-control"></textarea>
       </div>
