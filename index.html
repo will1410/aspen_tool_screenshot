@@ -1,181 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Screenshot tool for Aspen Discovery</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-    <link href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css " rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="css/custom.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Screenshot tool for Aspen Discovery</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css " rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-highlight/prism-line-highlight.min.css">
-    <script>window.Prism=window.Prism||{};Prism.manual=true;</script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-highlight/prism-line-highlight.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script>Prism.plugins.autoloader.languages_path='https://cdn.jsdelivr.net/npm/prismjs/components/';Prism.highlightAll();</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-highlight/prism-line-highlight.min.css">
+  <script>window.Prism = window.Prism || {}; Prism.manual = true;</script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-highlight/prism-line-highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script>Prism.plugins.autoloader.languages_path = 'https://cdn.jsdelivr.net/npm/prismjs/components/'; Prism.highlightAll();</script>
 
-  </head>
-    
-  <body>
+</head>
+
+<body>
   <html>
 
-<header>
-  <a href="#">
-    <img 
-      alt="Logo" 
-      src="screenshot_tool_logo.png" 
-      width="750em"
-    >
-  </a>
-</header>
+  <header>
+    <h1>
+      <a href="#">
+        <img alt="Screenshot tool for Aspen Discovery" src="screenshot_tool_logo.png" width="750em">
+      </a>
+    </h1>
+  </header>
 
-<div class="nav-band">
+  <div class="nav-band">
 
-  <div class="row">
+    <div class="row">
 
-    <div class="col-md-5 offset-md-1">
-      <ul class="d-flex gap-4 list-unstyled mb-0">
-        <li><a href="index.html"><i class="bi bi-house-door-fill"></i></a></li>
-        <li><a href="#about">About this project</a></li>
-        <li><a href="https://nextkansas.org/testing/tool_samples#screenshot" target="blank">Sample page</a></li>
-        <li><a href="https://will1410.github.io/aspen_tools/">Other tools</a></li>
-        <li><a href="https://github.com/will1410/aspen_tool_screenshot" target="_blank"><i class="bi bi-github"></i></a></li>
-      </ul>
-    </div>
-  
-    <div class="col-md-5 d-flex justify-content-end">
-      <ul class="d-flex gap-4 list-unstyled mb-0">
+      <div class="col-md-5 offset-md-1">
+        <ul class="d-flex gap-4 list-unstyled mb-0">
+          <li><a href="index.html"><i class="bi bi-house-door-fill"></i><span class="sr-only">Home</span></a></li>
+          <li><a href="#about">About this project</a></li>
+          <li><a href="https://nextkansas.org/testing/tool_samples#screenshot" target="blank">Sample page</a></li>
+          <li><a href="https://will1410.github.io/aspen_tools/">Other tools</a></li>
+          <li><a href="https://github.com/will1410/aspen_tool_screenshot" target="_blank"><i
+                class="bi bi-github"></i><span class="sr-only">Go to this project on Github</span></a></li>
+        </ul>
+      </div>
 
-        <div class="dropdown">
-          <a class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-list"></i>
-          </a>
+      <div class="col-md-5 d-flex justify-content-end">
+        <ul class="d-flex gap-4 list-unstyled mb-0">
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" class="dropdown-item" href="#about">About this project</a></li>
-            <li><a class="dropdown-item" href="https://nextkansas.org/testing/tool_samples#screenshot" target="blank">Sample page</a></li>
-            <li><a class="dropdown-item" href="https://will1410.github.io/aspen_tools/">Other tools</a></li>
-            <li><a class="dropdown-item" href="https://github.com/will1410/aspen_tool_screenshot" target="_blank">Github</a></li>
-          </ul>
-        </div>
+          <div class="dropdown">
+            <a class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-list"><span  class="sr-only">Menu</span></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" class="dropdown-item" href="#about">About this project</a></li>
+              <li><a class="dropdown-item" href="https://nextkansas.org/testing/tool_samples#screenshot"
+                  target="blank">Sample page</a></li>
+              <li><a class="dropdown-item" href="https://will1410.github.io/aspen_tools/">Other tools</a></li>
+              <li><a class="dropdown-item" href="https://github.com/will1410/aspen_tool_screenshot"
+                  target="_blank">Github</a></li>
+            </ul>
+          </div>
+
+      </div>
 
     </div>
 
   </div>
 
-</div>
+  <div class="main">
 
-<div class="main">
-
-  <form id="screenshot_form">
-
-    <div class="form-group row">
-      <div class="col-1 offset-1 text-end">
-        <label for="panel_title" class="col-form-label">Panel title</label>
-      </div>
-      <div class="col-5">
-        <input id="panel_title" name="panel_title" type="text" class="form-control" required>
-      </div>
-      <div class="col-1">
-        <span class="required" aria-hidden="true">* Required</span>
-      </div>
+    <div class="container mt-5" id="tool">
+      <h2>Screenshot tool</h2>
     </div>
 
-    <div class="form-group row">
-      <div class="col-1 offset-1 text-end">
-        <label for="image_link" class="col-form-label">Image URL</label>
-      </div>
-      <div class="col-5">
-        <input id="image_link" name="image_link" type="text" class="form-control" required>
-      </div>
-      <div class="col-1">
-        <span class="required" aria-hidden="true">* Required</span>
-      </div>
-    </div>
+    <form id="screenshot_form">
 
-    <div class="form-group row">
-      <div class="col-1 offset-1 text-end">
-        <label for="image_alt_text" class="col-form-label">Image alt text</label>
+      <div class="form-group row">
+        <div class="col-1 offset-1 text-end">
+          <label for="panel_title" class="col-form-label">Panel title</label>
+        </div>
+        <div class="col-5">
+          <input id="panel_title" name="panel_title" type="text" class="form-control" required>
+        </div>
+        <div class="col-1">
+          <span class="required" aria-hidden="true">* Required</span>
+        </div>
       </div>
-      <div class="col-5">
-        <input id="image_alt_text" name="image_alt_text" type="text" class="form-control" required>
+
+      <div class="form-group row">
+        <div class="col-1 offset-1 text-end">
+          <label for="image_link" class="col-form-label">Image URL</label>
+        </div>
+        <div class="col-5">
+          <input id="image_link" name="image_link" type="text" class="form-control" required>
+        </div>
+        <div class="col-1">
+          <span class="required" aria-hidden="true">* Required</span>
+        </div>
       </div>
-      <div class="col-1">
-        <span class="required" aria-hidden="true">* Required</span>
+
+      <div class="form-group row">
+        <div class="col-1 offset-1 text-end">
+          <label for="image_alt_text" class="col-form-label">Image alt text</label>
+        </div>
+        <div class="col-5">
+          <input id="image_alt_text" name="image_alt_text" type="text" class="form-control" required>
+        </div>
+        <div class="col-1">
+          <span class="required" aria-hidden="true">* Required</span>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="title_options" class="col-1 col-form-label offset-1">Title options</label>
-      <div class="col-3">
-        <div>
-          <fieldset>
-            <div class="d-flex gap-4">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="panel_icon" id="image_icon" value="image"
-                  checked="">
-                <label class="form-check-label" for="image_icon">
-                  Add image icon
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="panel_icon" id="camera_icon" value="camera">
-                <label class="form-check-label" for="camera_icon">
-                  Add camera icon
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="panel_icon" id="no_icon" value="none">
-                <label class="form-check-label" for="no_icon">
-                  No icon
-                </label>
-              </div>
-            </div>
-          </fieldset>
+      <div class="form-group row">
+        <label for="title_options" class="col-1 col-form-label offset-1">Title options</label>
+        <div class="col-3">
           <div>
-            <input type="checkbox" id="screenshot_checkbox" name="screenshot_checkbox" value="screenshot_checkbox">
-            <label for="screenshot" class="col-form-label">Prefix "Screenshot: " to the panel title</label>
+            <fieldset>
+              <div class="d-flex gap-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="panel_icon" id="image_icon" value="image"
+                    checked="">
+                  <label class="form-check-label" for="image_icon">
+                    Add image icon
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="panel_icon" id="camera_icon" value="camera">
+                  <label class="form-check-label" for="camera_icon">
+                    Add camera icon
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="panel_icon" id="no_icon" value="none">
+                  <label class="form-check-label" for="no_icon">
+                    No icon
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div>
+              <input type="checkbox" id="screenshot_checkbox" name="screenshot_checkbox" value="screenshot_checkbox">
+              <label for="screenshot" class="col-form-label">Prefix "Screenshot: " to the panel title</label>
+            </div>
+          </div>
+        </div>
+        <label for="image_options" class="col-1 col-form-label">Image options</label>
+        <div class="col-3">
+          <div>
+            <fieldset>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="image_options" id="image_no_border"
+                    value="no_border" checked="">
+                  <label class="form-check-label" for="image_icon">
+                    No image border
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="image_options" id="image_border" value="border">
+                  <label class="form-check-label" for="camera_icon">
+                    Add border to image
+                  </label>
+                </div>
+
+
+              </div>
+            </fieldset>
           </div>
         </div>
       </div>
-      <label for="image_options" class="col-1 col-form-label">Image options</label>
-      <div class="col-3">
-        <div>
-          <fieldset>
-            <div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="image_options" id="image_no_border"
-                  value="no_border" checked="">
-                <label class="form-check-label" for="image_icon">
-                  No image border
-                </label>
-              </div>
 
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="image_options" id="image_border" value="border">
-                <label class="form-check-label" for="camera_icon">
-                  Add border to image
-                </label>
-              </div>
+      <div class="form-group row">
+        <label for="width_options" class="col-1 col-form-label offset-1">Panel width</label>
+        <div class="col-8">
 
-
-            </div>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="width_options" class="col-1 col-form-label offset-1">Panel width</label>
-      <div class="col-8">
-      
           <fieldset>
             <div class="d-flex gap-4">
 
@@ -228,142 +234,271 @@
             </div>
           </fieldset>
 
+        </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <div class="offset-2 col-8">
-        <button name="submit" type="button" class="btn btn-primary" id="accordion_generator">Submit</button>
-        <button name="copy" type="button" class="btn btn-primary" id="copy_to_clipboard">Copy output to
-          clipboard</button>
-        <button name="reset" type="button" class="btn btn-primary" id="reset">Reset form</button>
+      <div class="form-group row">
+        <div class="offset-2 col-8">
+          <button name="submit" type="button" class="btn btn-primary" id="accordion_generator">Submit</button>
+          <button name="copy" type="button" class="btn btn-primary" id="copy_to_clipboard">Copy output to
+            clipboard</button>
+          <button name="reset" type="button" class="btn btn-primary" id="reset">Reset form</button>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="output" class="col-1 col-form-label offset-1">Output</label>
-      <div class="col-8">
-        <textarea id="output" name="output" cols="40" rows="8" class="form-control"></textarea>
+      <div class="form-group row">
+        <label for="output" class="col-1 col-form-label offset-1">Output</label>
+        <div class="col-8">
+          <textarea id="output" name="output" cols="40" rows="8" class="form-control"></textarea>
+        </div>
       </div>
-    </div>
 
-  </form>
+    </form>
 
 
-</div>
+  </div>
 
-<div class="container about mt-5 comments" id="notes">
+  <div class="container about mt-5 comments" id="notes">
 
-<h2>Javascript notes</h2>
+    <h2>Javascript notes</h2>
 
-<p>One of the things that this code adds to the image URL for the screenshots is that it wraps the &#60;img&#62; tag in an &#60;a href=""&#62; tag to open the screenshot in a new window.  It also adds a class called "nsc-open-image-modal" to that anchor.</p>
-<p>If you use this tool to create a collapsible image to insert in a basic or custom page in your Aspen and you have this custom javascript in your JavaScript Snippets, when you click on one of these images, it will open in a pop-up modal window at full size in the same window in your browser.  This means you can see the full size image just by clicking on the image and your browser won't take you to a new window.</p>  
+    <p>One of the things that this code adds to the image URL for the screenshots is that it wraps the &#60;img&#62; tag
+      in an &#60;a href=""&#62; tag to open the screenshot in a new window. It also adds a class called
+      "nsc-open-image-modal" to that anchor.</p>
+    <p>If you use this tool to create a collapsible image to insert in a basic or custom page in your Aspen and you have
+      this custom javascript in your JavaScript Snippets, when you click on one of these images, it will open in a
+      pop-up modal window at full size in the same window in your browser. This means you can see the full size image
+      just by clicking on the image and your browser won't take you to a new window.</p>
 
-<p>The custom code is:</p>
+    <p>The custom code is:</p>
 
-<pre id="preOut" class="rounded-xl border border-slate-200 bg-slate-50 dark:bg-slate-900/40 p-3 overflow-auto text-sm line-numbers code-wrap language-markup" data-start="1" tabindex="0" style="counter-reset: linenumber 0;"><code id="codeOut" class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-  <span class="token comment">/* Adds the function that opens any &lt;a&gt; with the class "nsc-open-image-modal" in a modal window */</span>
-    <span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token string">'a.nsc-open-image-modal'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      
-      <span class="token comment">/* Prevents the click from re-loading the page */</span>
-        e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <pre id="preOut"
+      class="rounded-xl border border-slate-200 bg-slate-50 dark:bg-slate-900/40 p-3 overflow-auto text-sm line-numbers code-wrap language-markup"
+      data-start="1" tabindex="0" style="counter-reset: linenumber 0;"><code id="codeOut" class="language-markup"><span
+          class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span
+            class="token punctuation">&gt;</span></span><span class="token script"><span
+            class="token language-javascript">
+            <span class="token comment">/* Adds the function that opens any &lt;a&gt; with the class
+              "nsc-open-image-modal" in a modal window */</span>
+            <span class="token function">$</span><span class="token punctuation">(</span>document<span
+              class="token punctuation">)</span><span class="token punctuation">.</span><span
+              class="token function">on</span><span class="token punctuation">(</span><span
+              class="token string">'click'</span><span class="token punctuation">,</span> <span
+              class="token string">'a.nsc-open-image-modal'</span><span class="token punctuation">,</span> <span
+              class="token keyword">function</span> <span class="token punctuation">(</span><span
+              class="token parameter">e</span><span class="token punctuation">)</span> <span
+              class="token punctuation">{</span>
 
-      <span class="token comment">/* Gets the URL for the image */</span>
-        <span class="token keyword">var</span> imageUrl <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">/* Prevents the click from re-loading the page */</span>
+            e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span
+              class="token punctuation">(</span><span class="token punctuation">)</span><span
+              class="token punctuation">;</span>
 
-      <span class="token comment">/* Gets the image and the alt text */</span>
-        <span class="token keyword">var</span> imageAlt <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'alt'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">;</span>
+            <span class="token comment">/* Gets the URL for the image */</span>
+            <span class="token keyword">var</span> imageUrl <span class="token operator">=</span> <span
+              class="token function">$</span><span class="token punctuation">(</span><span
+              class="token keyword">this</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">attr</span><span
+              class="token punctuation">(</span><span class="token string">'href'</span><span
+              class="token punctuation">)</span><span class="token punctuation">;</span>
 
-      <span class="token comment">/* Puts the image and the alt text together into a new url for the modal window */</span>
-        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#modalImage'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-          <span class="token literal-property property">src</span><span class="token operator">:</span> imageUrl<span class="token punctuation">,</span>
-          <span class="token literal-property property">alt</span><span class="token operator">:</span> imageAlt
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">/* Gets the image and the alt text */</span>
+            <span class="token keyword">var</span> imageAlt <span class="token operator">=</span> <span
+              class="token function">$</span><span class="token punctuation">(</span><span
+              class="token keyword">this</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">find</span><span
+              class="token punctuation">(</span><span class="token string">'img'</span><span
+              class="token punctuation">)</span><span class="token punctuation">.</span><span
+              class="token function">attr</span><span class="token punctuation">(</span><span
+              class="token string">'alt'</span><span class="token punctuation">)</span> <span
+              class="token operator">||</span> <span class="token string">''</span><span
+              class="token punctuation">;</span>
 
-      <span class="token comment">/* Shows the modal window */</span>
-        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#imageModal'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">modal</span><span class="token punctuation">(</span><span class="token string">'show'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">/* Puts the image and the alt text together into a new url for the modal window
+              */</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span
+              class="token string">'#modalImage'</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">attr</span><span
+              class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">src</span><span class="token operator">:</span> imageUrl<span
+              class="token punctuation">,</span>
+            <span class="token literal-property property">alt</span><span class="token operator">:</span> imageAlt
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span
+              class="token punctuation">;</span>
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-  <span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">/* Shows the modal window */</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span
+              class="token string">'#imageModal'</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">modal</span><span
+              class="token punctuation">(</span><span class="token string">'show'</span><span
+              class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span
+              class="token punctuation">;</span>
+          </span></span><span class="token tag"><span class="token tag"><span
+              class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 
-   <span class="token comment">/* Adds the modal only to Aspen Basic Pages and Portal Pages */</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hasClass</span><span class="token punctuation">(</span><span class="token string">'action_BasicPage'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hasClass</span><span class="token punctuation">(</span><span class="token string">'action_PortalPage'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span
+            class="token punctuation">&gt;</span></span><span class="token script"><span
+            class="token language-javascript">
+            <span class="token function">$</span><span class="token punctuation">(</span>document<span
+              class="token punctuation">)</span><span class="token punctuation">.</span><span
+              class="token function">ready</span><span class="token punctuation">(</span><span
+              class="token keyword">function</span> <span class="token punctuation">(</span><span
+              class="token punctuation">)</span> <span class="token punctuation">{</span>
 
-        <span class="token comment">/* Builds the modal and attaches it to the basic and custom pages */</span> 
-        <span class="token comment">/* so that the image has a modal to go into when the function is initialized */</span>
-          <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
-            &lt;div class="modal fade" id="imageModal" role="dialog" tabindex="-1"&gt;
-              &lt;div class="modal-dialog" role="document" style="width: 100%; height: 100%; margin: 0;"&gt;
-                &lt;div class="modal-content" style="width: 100%; height: 100%; border: 0; border-radius: 0; background: #222;"&gt;
-                  &lt;button type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                    style="position: fixed; top: 10px; right: 20px; z-index: 9999; color: white; font-size: 40px; opacity: 1;"&gt;
-                    &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
-                  &lt;/button&gt;
-                  &lt;img class="img-responsive"
-                    id="modalImage"
-                    alt=""
-                    style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: contain; padding: 10px;"&gt;
+            <span class="token comment">/* Adds the modal only to Aspen Basic Pages and Portal Pages */</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span
+              class="token function">$</span><span class="token punctuation">(</span><span
+              class="token string">'body'</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">hasClass</span><span
+              class="token punctuation">(</span><span class="token string">'action_BasicPage'</span><span
+              class="token punctuation">)</span> <span class="token operator">||</span> <span
+              class="token function">$</span><span class="token punctuation">(</span><span
+              class="token string">'body'</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">hasClass</span><span
+              class="token punctuation">(</span><span class="token string">'action_PortalPage'</span><span
+              class="token punctuation">)</span><span class="token punctuation">)</span> <span
+              class="token punctuation">{</span>
+
+            <span class="token comment">/* Builds the modal and attaches it to the basic and custom pages */</span>
+            <span class="token comment">/* so that the image has a modal to go into when the function is initialized
+              */</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span
+              class="token string">'body'</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">append</span><span
+              class="token punctuation">(</span><span class="token template-string"><span
+                class="token template-punctuation string">`</span><span class="token string">
+                &lt;div class="modal fade" id="imageModal" role="dialog" tabindex="-1"&gt;
+                &lt;div class="modal-dialog" role="document" style="width: 100%; height: 100%; margin: 0;"&gt;
+                &lt;div class="modal-content" style="width: 100%; height: 100%; border: 0; border-radius: 0; background:
+                #222;"&gt;
+                &lt;button type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+                style="position: fixed; top: 10px; right: 20px; z-index: 9999; color: white; font-size: 40px; opacity:
+                1;"&gt;
+                &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;img class="img-responsive"
+                id="modalImage"
+                alt=""
+                style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: contain; padding:
+                10px;"&gt;
                 &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                &lt;/div&gt;
+                &lt;/div&gt;
+              </span><span class="token template-punctuation string">`</span></span><span
+              class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        <span class="token comment">/* Puts the image created in the first step into the modal we just created */</span>
-          <span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token string">'a.view-fullscreen-image'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">/* Puts the image created in the first step into the modal we just created
+              */</span>
+            <span class="token function">$</span><span class="token punctuation">(</span>document<span
+              class="token punctuation">)</span><span class="token punctuation">.</span><span
+              class="token function">on</span><span class="token punctuation">(</span><span
+              class="token string">'click'</span><span class="token punctuation">,</span> <span
+              class="token string">'a.view-fullscreen-image'</span><span class="token punctuation">,</span> <span
+              class="token keyword">function</span> <span class="token punctuation">(</span><span
+              class="token parameter">e</span><span class="token punctuation">)</span> <span
+              class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span
+              class="token punctuation">(</span><span class="token punctuation">)</span><span
+              class="token punctuation">;</span>
 
-            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#modalImage'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-              <span class="token literal-property property">src</span><span class="token operator">:</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">alt</span><span class="token operator">:</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'alt'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token string">''</span>
-            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span
+              class="token string">'#modalImage'</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">attr</span><span
+              class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">src</span><span class="token operator">:</span> <span
+              class="token function">$</span><span class="token punctuation">(</span><span
+              class="token keyword">this</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">attr</span><span
+              class="token punctuation">(</span><span class="token string">'href'</span><span
+              class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">alt</span><span class="token operator">:</span> <span
+              class="token function">$</span><span class="token punctuation">(</span><span
+              class="token keyword">this</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">find</span><span
+              class="token punctuation">(</span><span class="token string">'img'</span><span
+              class="token punctuation">)</span><span class="token punctuation">.</span><span
+              class="token function">attr</span><span class="token punctuation">(</span><span
+              class="token string">'alt'</span><span class="token punctuation">)</span> <span
+              class="token operator">||</span> <span class="token string">''</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span
+              class="token punctuation">;</span>
 
             <span class="token comment">/* Displays the modal pop-up */</span>
-              <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#imageModal'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">modal</span><span class="token punctuation">(</span><span class="token string">'show'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span
+              class="token string">'#imageModal'</span><span class="token punctuation">)</span><span
+              class="token punctuation">.</span><span class="token function">modal</span><span
+              class="token punctuation">(</span><span class="token string">'show'</span><span
+              class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span
+              class="token punctuation">;</span>
 
-      <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
 
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span
+              class="token punctuation">;</span>
 
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+          </span></span><span class="token tag"><span class="token tag"><span
+              class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span
+          aria-hidden="true"
+          class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>
+    </pre>
 
-<div class="container about mt-5 comments" id="about">
-
-  <h2>About this project</h2>
-  <p>The genesis for this project is simple.  I wanted to add collapsible screenshots to basic pages in Aspen Discovery.  Since Aspen uses Bootstrap, all of the tools for creating accordions and buttons, and other Bootstrap styled content is built in to Aspen, so adding that content is just a matter of writing the HTML for basic pages to include that content.  This makes collapsible screenshots possible with Bootstrap.</p>
-  <p>The problem is that creating all of that HTML is kind of a pain.  I first used templates so that all I had to do was to copy and paste a template into the web builder, but then you have to go in and add the content and change the IDs and some of the classes and that was also more work than I was willing to commit to.  I wanted a way to form-fill the basic data and I came up with this form that only asks for three things - Title, URL, and Alt text.  Then I added some checkboxes and radio buttons for different styles I wanted to mess around with.  The result is the page you see here.</p>
-  <p>Another advantage of creating collapsible screenshots using this tool is that, if you work in environment where multiple people are creating pages in Aspen, having multiple people using a tool like this creates consistency in the look and feel of your pages.  If every page builder in your organization is creating their own pages in their own style, your site will lose consistency.</p>
-  <p>The biggest caveat about the screenshots you create with this tool is that they are formatted for Bootstrap 5.  If Aspen moves to a different version of Bootstrap that isn't backwards compatible with Bootstrap 5, then some of the Bootstrap elements that allow the screenshots to collapse may break and the code you add to Aspen may need to be updated.</p>
-  <p>This entire project is <a href="https://github.com/will1410/aspen_tool_screenshot" target="_blank">available on Github</a>, so if you'd like to see the source code or if you'd like to download a copy of the project and change it to suit your needs, feel free to do so.</p>
-
-</div>
-
-<footer>
-  <div class="row">
-    <div class="col-md-3 offset-md-7">
-      <article class="mit-license">
-        <p>The MIT License (MIT)<br>
-        Copyright (c) 2026 George H. Williams<br>
-        Permission is hereby granted, free of charge...<br>
-        [click here for <a href="LICENSE">full license</a>]
-      </article>
-    </div>
-    <div class="col-md-1">
-
-    </div>
   </div>
-</footer>
 
-</html>
+  <div class="container about mt-5 comments" id="about">
 
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js'></script><script  src="./script.js"></script>
+    <h2>About this project</h2>
+    <p>The genesis for this project is simple. I wanted to add collapsible screenshots to basic pages in Aspen
+      Discovery. Since Aspen uses Bootstrap, all of the tools for creating accordions and buttons, and other Bootstrap
+      styled content is built in to Aspen, so adding that content is just a matter of writing the HTML for basic pages
+      to include that content. This makes collapsible screenshots possible with Bootstrap.</p>
+    <p>The problem is that creating all of that HTML is kind of a pain. I first used templates so that all I had to do
+      was to copy and paste a template into the web builder, but then you have to go in and add the content and change
+      the IDs and some of the classes and that was also more work than I was willing to commit to. I wanted a way to
+      form-fill the basic data and I came up with this form that only asks for three things - Title, URL, and Alt
+      text. Then I added some checkboxes and radio buttons for different styles I wanted to mess around with. The
+      result is the page you see here.</p>
+    <p>Another advantage of creating collapsible screenshots using this tool is that, if you work in environment where
+      multiple people are creating pages in Aspen, having multiple people using a tool like this creates consistency
+      in the look and feel of your pages. If every page builder in your organization is creating their own pages in
+      their own style, your site will lose consistency.</p>
+    <p>The biggest caveat about the screenshots you create with this tool is that they are formatted for Bootstrap 5.
+      If Aspen moves to a different version of Bootstrap that isn't backwards compatible with Bootstrap 5, then some
+      of the Bootstrap elements that allow the screenshots to collapse may break and the code you add to Aspen may
+      need to be updated.</p>
+    <p>This entire project is available on
+        Github, so if you'd like to see the source code or if you'd like to download a copy of the project and
+      change it to suit your needs, feel free to do so.</p>
+      <p><a class="btn btn-primary btn-lg" style="margin-top: 1em;" href="https://github.com/will1410/aspen_tool_screenshot" target="_blank" rel="noopener noreferrer">Go to this project on github  <i class="bi bi-github"></i></a></p>
 
-  </body>
-  
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-md-3 offset-md-7">
+        <article class="mit-license">
+          <p>The MIT License (MIT)<br>
+            Copyright (c) 2026 George H. Williams<br>
+            Permission is hereby granted, free of charge...<br>
+            [click here for <a href="LICENSE">full license</a>]
+        </article>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
+  </footer>
+
+  </html>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
 </html>
