@@ -7,3 +7,7 @@ This project is live at [https://will1410.github.io/aspen_tool_screenshot/](http
 # License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This is a work in progress.  After seeing some presentations at AspenCon 2026, I'm updating this tool to make it more accessible.
+
+I also made the alt-text field required to help make images styled with this tool accessible.
