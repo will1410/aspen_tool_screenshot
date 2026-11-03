@@ -4,6 +4,8 @@ $(document).ready(function () {
     $("#accordion_generator").click(function () {
       event.preventDefault();
 
+        $("#image_alt_text").prop("required", true);
+
       /* Gets data from the form to build the raw HTML output */
         let panel_title = $("#panel_title").val().trim();
         let image_link = $("#image_link").val().trim();
